@@ -3,7 +3,7 @@ import "./pages.css"
 const  About=()=> {
   return (
     <div className='container'>
-      <h1>Manoj</h1>
+      <h1>About</h1>
     </div>
   )
 }

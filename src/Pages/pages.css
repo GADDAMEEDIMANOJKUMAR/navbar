@@ -1,12 +1,28 @@
 .container {
-    padding: 20px;
-    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+h1{
+    font-size: 40px;
+    color: #f1eded;
     text-align: center;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background-image: radial-gradient( #2c5364, #0f2027 );
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
 }
 @media (max-width: 568px) {
     .container {
         font-size: 20px;
         padding: 10px;
+    }
+    h1{
+        margin-top: 20%;
     }
 
 }

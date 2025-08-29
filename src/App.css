@@ -31,12 +31,7 @@ a{
 a:hover{
   color: #00c9ff;
 }
-.container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #92fe9d;
-}
+
 @media (max-width: 568px) {
   .navbar {
     display: flex;
