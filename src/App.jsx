@@ -7,9 +7,10 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import About from "./Pages/About";
 import Contact from "./Pages/Contact";
 import Home from "./Pages/Home";
-import Login from "./Pages/Login";
+import Login from "./Pages/Login page/Login";
 import Services from "./Pages/Services";
-import Signup from "./Pages/signup";
+import SignUp from "./Pages/Signup page/signup";
+import ForgotPassword from './Pages/ForgotPasswordpage/forgot';
 
 const App = () => {
   const [toggleMenu, setToggleMenu] = React.useState(false);
@@ -49,7 +50,7 @@ const App = () => {
                 <Link to="/services">Services</Link>
                 <Link to="/contact">Contact</Link>
                 <Link to="/login">Login</Link>
-                <Link to="/signup">Sign Up</Link>
+                <Link to="/SignUp">Sign Up</Link>
                 <div>
                   <p>created by @manoj kumar❤️</p>
                 </div>
@@ -67,7 +68,7 @@ const App = () => {
               <Link to="/services">Services</Link>
               <Link to="/contact">Contact</Link>
               <Link to="/login">Login</Link>
-              <Link to="/signup">Sign Up</Link>
+              <Link to="/SignUp">Sign Up</Link>
             </div>
           </nav>
         )}
@@ -78,7 +79,8 @@ const App = () => {
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<Signup />} />
+          <Route path="/SignUp" element={<SignUp />} />
+          <Route path="/forgotPassword" element={<ForgotPassword />} />
         </Routes>
       </div>
     </BrowserRouter>

@@ -1,0 +1,128 @@
+.gradient-bg {
+  background: linear-gradient(135deg, #00c9ff, #92fe9d);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+}
+
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.btn-gradient {
+  background: linear-gradient(45deg, #00c9ff, #92fe9d);
+  background-size: 200% 200%;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-gradient:hover {
+  background-position: right center;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-gradient:active {
+  transform: translateY(0);
+}
+
+.input-field {
+  transition: all 0.3s ease;
+  border-bottom: 2px solid #00c9ff;
+}
+
+.input-field:focus {
+  border-bottom-color: #92fe9d;
+}
+
+.floating {
+  animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(146, 254, 157, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(146, 254, 157, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(146, 254, 157, 0);
+  }
+}
+
+/* Ripple Effect */
+.ripple {
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(0);
+  animation: ripple 600ms linear;
+  background-color: rgba(255, 255, 255, 0.7);
+  pointer-events: none;
+}
+
+@keyframes ripple {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+/* Social buttons */
+.social-btn {
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  background-color: white;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #6b7280;
+  transition: background-color 0.3s ease;
+}
+
+.social-btn:hover {
+  background-color: #222323;
+}
+.social-icon {
+  margin-right: 0.5rem;
+}
+
+@media (max-width: 568px) {
+  .btn-gradient {
+    width: 100%;
+  }
+  .social-btn {
+    width: 100%;
+  }
+  
+}
+
+
